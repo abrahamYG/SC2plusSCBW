@@ -1,5 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    
+    
+     <CModel id="HydraliskAttackLaunchSCBW@Model" parent="LaunchFX">
+        <Model value="Assets\Effects\Zerg\InfestorInfestationMissileLaunch\InfestorInfestationMissileLaunch.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CModel>
+
+    <CModel id="AcidSalivaWeaponSCBW@Model" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\RoachMissileEx1\RoachMissileEx1.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CModel>
+
+    <CModel id="DevourerMPAcidSporesImpactSCBW@Model" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\Devourer_AcidSpores\Devourer_AcidSpores.m3"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+
+    <CModel id="DevourerMPWeaponImpactSCBW@Model" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\Devourer_AcidSpores_Impact\Devourer_AcidSpores_Impact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+
+    <CModel id="DevourerMPWeaponMissileSCBW@Model" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\Devourer_AcidSpores_Missile\Devourer_AcidSpores_Missile.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+
+    <CModel id="GuardianMPWeaponImpactSCBW@Model" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\PrimalGuardianMissileImpact\PrimalGuardianMissileImpact.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+
+    <CModel id="GuardianMPWeaponMissileSCBW@Model" parent="Unit" Race="Zerg">
+        <Model value="Assets\Effects\Zerg\PrimalGuardianMissile\PrimalGuardianMissile.m3"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.250000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionRadius value="0.250000"/>
+        <ShadowRadius value="0.250000"/>
+        <SquibTypeDefault value="Flesh"/>
+    </CModel>
+
+    <CModel id="HydraliskAttackImpactSCBW@Model" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\MutaliskMissileImpact\MutaliskMissileImpact.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ScaleMax value="0.660000,0.660000,0.660000"/>
+        <ScaleMin value="0.660000,0.660000,0.660000"/>
+    </CModel>
+
+    <CModel id="LurkerAttackSpikeEx2SCBW@Model" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\SC1_LurkerMissile\SC1_LurkerMissile_AC.m3"/>
+    </CModel>
+
+    <CModel id="LurkerMPAttackSpikeImpactSCBW@Model" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\LurkerMissile_Impact_EX2\LurkerMissile_Impact_EX2.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CModel>
+
+    <CModel id="NeedleSpinesWeaponSCBW@Model" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\HydraliskMissile\HydraliskMissile.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CModel>
+
+    <CModel id="RoachAttackImpactSCBW@Model" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\RoachWeaponImpact\RoachWeaponImpact.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CModel>
+
+    <CModel id="RoachMissileImpactSCBW@Model" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\RoachMissileImpactEx1\RoachMissileImpactEx1.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CModel>
+
+    <CModel id="SunkenAttackImpactSCBW@Model" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\PrimalSunkenColonyAttackImpact\PrimalSunkenColonyAttackImpact.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ScaleMax value="0.550000,0.550000,0.550000"/>
+        <ScaleMin value="0.550000,0.550000,0.550000"/>
+        <TextureDeclares Prefix="zergtenticlesprojectile_">
+            <Adaptions TriggerOnSubstring="_diffuse" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    
+    
+    
+    
+    
     <CModel default="1" id="ProtossAdvisorSCBW@PortraitBase" parent="Portrait">
         <Model value="Assets\Portraits\Protoss\Aldaris@PortraitSCBW\Aldaris@PortraitSCBW.m3"/>
         <Flags index="Download" value="1"/>
