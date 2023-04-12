@@ -1,5 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    
+    
+    
+     <CUnit id="DevourerMPWeaponMissileSCBW@Unit" parent="MISSILE">
+        <Race value="Prot"/>
+        <Mover value="DevourerMPWeaponMissileSCBW@Missile"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Campaign"/>
+    </CUnit>
+
+    <CUnit id="GlaiveWurmM6WeaponSCBW@Unit" parent="MISSILE">
+        <Name value="Unit/Name/GlaiveWurmWeapon"/>
+        <Description value="Button/Tooltip/GlaiveWurmWeapon"/>
+        <ReviveType value="GlaiveWurmWeapon"/>
+        <Race value="Zerg"/>
+        <Mover value="GlaiveWurmBounceMissile"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+        <TacticalAI value="GlaiveWurmWeapon"/>
+        <SelectAlias value="GlaiveWurmWeapon"/>
+        <SubgroupAlias value="GlaiveWurmWeapon"/>
+        <AIEvaluateAlias value="GlaiveWurmWeapon"/>
+        <ReviveInfoBase>
+            <Charge Link="GlaiveWurmWeapon/Revive"/>
+            <Cooldown Link="GlaiveWurmWeapon/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+
+    <CUnit id="GlaiveWurmM4WeaponSCBW@Unit" parent="MISSILE">
+        <Name value="Unit/Name/GlaiveWurmWeapon"/>
+        <Description value="Button/Tooltip/GlaiveWurmWeapon"/>
+        <ReviveType value="GlaiveWurmWeapon"/>
+        <Race value="Zerg"/>
+        <Mover value="GlaiveWurmBounceMissile"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+        <TacticalAI value="GlaiveWurmWeapon"/>
+        <SelectAlias value="GlaiveWurmWeapon"/>
+        <SubgroupAlias value="GlaiveWurmWeapon"/>
+        <AIEvaluateAlias value="GlaiveWurmWeapon"/>
+        <ReviveInfoBase>
+            <Charge Link="GlaiveWurmWeapon/Revive"/>
+            <Cooldown Link="GlaiveWurmWeapon/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+
+    <CUnit id="GlaiveWurmM5WeaponSCBW@Unit" parent="MISSILE">
+        <Name value="Unit/Name/GlaiveWurmWeapon"/>
+        <Description value="Button/Tooltip/GlaiveWurmWeapon"/>
+        <ReviveType value="GlaiveWurmWeapon"/>
+        <Race value="Zerg"/>
+        <Mover value="GlaiveWurmBounceMissile"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+        <TacticalAI value="GlaiveWurmWeapon"/>
+        <SelectAlias value="GlaiveWurmWeapon"/>
+        <SubgroupAlias value="GlaiveWurmWeapon"/>
+        <AIEvaluateAlias value="GlaiveWurmWeapon"/>
+        <ReviveInfoBase>
+            <Charge Link="GlaiveWurmWeapon/Revive"/>
+            <Cooldown Link="GlaiveWurmWeapon/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+
+    <CUnit id="GuardianMPWeaponSCBW@Unit" parent="MISSILE">
+        <Race value="Zerg"/>
+        <Mover value="MissileDefault"/>
+        <EditorCategories value="ObjectFamily:Campaign,ObjectType:Projectile"/>
+    </CUnit>
+
+    <CUnit id="InvisibleTargetDummySCBW@Unit">
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="NoDeathEvent" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <LifeArmor value="10"/>
+        <LifeRegenRate value="10"/>
+        <BehaviorArray Link="ImmuneToDamage"/>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectFamily:Campaign,ObjectType:Other"/>
+    </CUnit>
+
+    <CUnit id="SunkenColonlyWeapon_SCBW@Unit" parent="MISSILE">
+        <Race value="Zerg"/>
+        <Mover value="SunkenColonyWeaponSCBW@Missile"/>
+        <BehaviorArray Link="ImpalerMissileGroundCracks"/>
+        <EditorCategories value="ObjectFamily:Campaign,ObjectType:Projectile"/>
+    </CUnit>
+
+    <CUnit id="AcidSalivaWeaponSCBW@Unit" parent="MISSILE">
+        <Race value="Zerg"/>
+        <Mover value="AcidSalivaWeapon"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+
+    <CUnit id="GlaiveWurmM2WeaponSCBW@Unit" parent="MISSILE">
+        <Name value="Unit/Name/GlaiveWurmWeapon"/>
+        <Description value="Button/Tooltip/GlaiveWurmWeapon"/>
+        <ReviveType value="GlaiveWurmWeapon"/>
+        <Race value="Zerg"/>
+        <Mover value="GlaiveWurmBounceMissile"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+        <TacticalAI value="GlaiveWurmWeapon"/>
+        <SelectAlias value="GlaiveWurmWeapon"/>
+        <SubgroupAlias value="GlaiveWurmWeapon"/>
+        <AIEvaluateAlias value="GlaiveWurmWeapon"/>
+        <ReviveInfoBase>
+            <Charge Link="GlaiveWurmWeapon/Revive"/>
+            <Cooldown Link="GlaiveWurmWeapon/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+
+    <CUnit id="GlaiveWurmM3WeaponSCBW@Unit" parent="MISSILE">
+        <Name value="Unit/Name/GlaiveWurmWeapon"/>
+        <Description value="Button/Tooltip/GlaiveWurmWeapon"/>
+        <ReviveType value="GlaiveWurmWeapon"/>
+        <Race value="Zerg"/>
+        <Mover value="GlaiveWurmBounceMissile"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+        <TacticalAI value="GlaiveWurmWeapon"/>
+        <SelectAlias value="GlaiveWurmWeapon"/>
+        <SubgroupAlias value="GlaiveWurmWeapon"/>
+        <AIEvaluateAlias value="GlaiveWurmWeapon"/>
+        <ReviveInfoBase>
+            <Charge Link="GlaiveWurmWeapon/Revive"/>
+            <Cooldown Link="GlaiveWurmWeapon/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+
+    <CUnit id="GlaiveWurmWeaponSCBW@Unit" parent="MISSILE">
+        <Race value="Zerg"/>
+        <Mover value="MissileDefault"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+
+    <CUnit id="NeedleSpinesWeaponSCBW@Unit" parent="MISSILE">
+        <Name value="Unit/Name/HydraliskGroundWeapon"/>
+        <Mover value="NeedleSpinesWeapon"/>
+    </CUnit>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <CUnit default="1" id="SCBW_Unit">
         <Mob value="Multiplayer"/>
     </CUnit>
