@@ -1,5 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    
+    
+     <CWeaponLegacy id="NeedleClawsSCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="NeedleClawsSCBW@Effect"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="15"/>
+        <Range value="0.1"/>
+        <Period value="0.6455"/>
+        <Effect value="NeedleClawsSCBW@Effect"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="DevourerMPWeaponSCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-airattacks-level0.dds"/>
+        <DisplayEffect value="DevourerMPWeaponDamageSCBW@Effect"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Period value="5.7917"/>
+        <Effect value="DevourerMPWeaponLaunchSCBW@Effect"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="GuardianMPWeaponSCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-airattacks-level0.dds"/>
+        <DisplayEffect value="GuardianMPWeaponDamageSCBW@Effect"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="9.5"/>
+        <Range value="9"/>
+        <Period value="2"/>
+        <Effect value="GuardianMPWeaponLMSCBW@Effect"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="HydraliskMeleeSCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="HydraliskMeleeSCBW@Effect"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.5"/>
+        <Marker Link="Weapon/NeedleSpines"/>
+        <Cost>
+            <Cooldown Link="Weapon/NeedleSpines"/>
+        </Cost>
+        <Period value="0.75"/>
+        <DamagePoint value="0.3"/>
+        <Effect value="HydraliskMeleeSCBW@Effect"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="NeedleSpinesSCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="NeedleSpinesDamageSCBW@Effect"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6.5"/>
+        <Period value="0.825"/>
+        <DamagePoint value="0.14"/>
+        <Backswing value="0.5607"/>
+        <Effect value="NeedleSpinesLaunchMissileSCBW@Effect"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="HydraliskAttackSCBW@Weapon">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="HydraliskWeaponSc1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Period value="0.8608"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <Effect value="HydraliskWeaponSc1"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="GlaiveWurmSCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-airattacks-level0.dds"/>
+        <DisplayEffect value="GlaiveWurmU1SCBW@Effect"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3"/>
+        <RangeSlop value="2"/>
+        <ArcSlop value="45"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1.5246"/>
+        <DamagePoint value="0"/>
+        <Effect value="GlaiveWurmSCBW@Effect"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="AcidSalivaSCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="AcidSalivaUSCBW@Actor"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="4"/>
+        <MinimumRange value="0.6"/>
+        <Period value="2"/>
+        <Effect value="AcidSalivaLMSCBW@Actor"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="RoachMeleeSCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="RoachUMeleeSCBW@Effect"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.5"/>
+        <Marker Link="Weapon/AcidSaliva"/>
+        <Cost>
+            <Cooldown Link="Weapon/AcidSaliva"/>
+        </Cost>
+        <Period value="2"/>
+        <Effect value="RoachUMeleeSCBW@Effect"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="SuicideSCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-zerg-banelingspooge.dds"/>
+        <DisplayEffect value="SuicideDamageSCBW@Effect"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquireFilters value="Air,Visible;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.25"/>
+        <Period value="0.833"/>
+        <DamagePoint value="0"/>
+        <Effect value="SuicideSetSCBW@Effect"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="LurkerMPSCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="LurkerMPDamageSCBW@Effect"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="8.5"/>
+        <Range value="8"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="2"/>
+        <DamagePoint value="0"/>
+        <Effect value="LurkerMPSCBW@Effect"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="SunkenColonlyWeapon_SCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="SunkenColonlyDamage_SCBW@Effect"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <ArcSlop value="0"/>
+        <Period value="1.853"/>
+        <Effect value="SunkenColonly_SCBW@Effect"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="KaiserBladesSCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="KaiserBladesDamageSCBW@Effect"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="1"/>
+        <Cost>
+            <Cooldown Link="Abil/UltraliskWeaponCooldown" Location="Unit" TimeUse="0.86"/>
+        </Cost>
+        <Period value="0.86"/>
+        <DamagePoint value="0.3332"/>
+        <Effect value="KaiserBladesDamageSCBW@Effect"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy id="ClawsSCBW@Weapon">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="ClawsSCBW@Effect"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="0.696"/>
+        <Effect value="ClawsSCBW@Effect"/>
+    </CWeaponLegacy>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <CWeaponLegacy id="BattlecruiserSCBWWeaponAir">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
