@@ -1,3 +1,5 @@
+Note: This project has been moved to https://github.com/TeamKoprulu/SCEvoComplete
+
 # Starcraft: Evolution Complete
 
 A minimalistic mod for StarCraft 2 that includes Broodwar units, without confliciting with the regular SC2 units.
